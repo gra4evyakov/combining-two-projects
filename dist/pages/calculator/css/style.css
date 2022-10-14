@@ -1,0 +1,235 @@
+/* 
+colors 
+
+bg:       #DAF0FF;
+bg-calc:  #F7F8FB;
+default:  #858585;
+dark:     #424242; 
+
+blue-200: #ADE2FF;
+blue-400: #7CC9FF;
+blue-600: #38B9FF;
+blue-900: #109DFF;
+
+*/
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #858585;
+    font-size: 32px;
+    line-height: 48px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+.calc {
+    padding: 40px 33px;
+    position: relative;
+    width: 309px;
+    height: 575px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.calc__screen {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+.them-btn {
+    position: relative;
+    background-color: transparent;
+    fill: #858585;
+    border: none;
+    padding: 0;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: fill .3s ease-in-out;
+}
+
+.dark-theme:hover {
+    fill: #F1754E;
+}
+
+.light-theme {
+    fill: #ffffff;
+    display: none;
+}
+
+.light-theme:hover {
+    fill: #38B9FF;
+}
+
+.buttons {
+    color: #38B9FF;
+}
+
+.buttons__left {
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 3;
+    gap: 12px;
+    max-width: 226px;
+    width: 100%;
+}
+
+.buttons__inner {
+    width: 100%;
+    display: flex;
+    column-gap: 12px;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    backdrop-filter: blur(6px);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #38B9FF;
+    border-color: #38B9FF;
+}
+
+.btn--default-color {
+    color: #858585;
+    fill: #858585;
+    transition: fill .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.btn--default-color:hover {
+    color: white;
+    fill: white;
+    background-color: #858585;
+    border-color: #858585;
+}
+
+.btn--bg-blue-200 {
+    background-color: #ADE2FF;
+    fill: #109DFF;
+    color: #109DFF;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, fill .3s ease-in-out;
+}
+
+.btn--bg-blue-200:hover {
+    fill: white;
+    color: white;
+    background-color: #38B9FF;
+    border-color: #38B9FF;
+}
+
+.zero {
+    max-width: 131px;
+    width: 100%;
+}
+
+.erase svg {
+    transform: translateX(-3px);
+}
+
+.calc__buttons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.buttons__right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 19px;
+}
+
+.equal {
+    color: #B2DAFF;
+    background-color: #1991FF;
+    height: 107px;
+}
+
+.plus {
+    height: 96px;
+}
+
+.calc__result {
+    font-size: 48px;
+    line-height: 72px;
+    color: #424242;
+}
+
+.calc__values {
+    font-size: 24px;
+    line-height: 36px;
+    color: #818181;
+}
+
+/* dark-theme */
+
+.calc--dark {
+    background: linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
+}
+
+.btn--dark {
+    background-color: #303136;
+    border: none;
+    color: #F1754E;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.btn--dark:hover {
+    background-color: #F1754E;
+    color: #ffffff;
+}
+
+.btn--default-color-dark {
+    background-color: #616161;
+    color: #424242;
+    fill: #424242;
+    border: none;
+}
+
+.btn--bg-red-200 {
+    background-color: #f88a69;
+    color: #ffffff;
+    fill: #ffffff;
+    border: none;
+}
+
+.btn--bg-red-200:hover {
+    background-color: #c66345;
+}
+
+.equal--dark {
+    background-color: #FB5825;
+    color: #ffbeab;
+    border: none;
+}
+
+.equal--dark:hover {
+    background-color: #ff3c00;
+}
+
+.calc__result--dark {
+    color: white;
+}
+
+.calc__values--dark {
+    color: #818181;
+}

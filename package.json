@@ -1,0 +1,16 @@
+{
+  "homepage": "https://gra4evyakov.github.io/combining-two-projects",
+  "name": "combining-two-projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
